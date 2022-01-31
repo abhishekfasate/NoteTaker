@@ -1,0 +1,121 @@
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Heebo:wght@500&family=Lato:wght@100&family=Oswald:wght@500&display=swap" rel="stylesheet">
+<style>
+body
+ {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html
+ {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after 
+{
+  box-sizing: inherit;
+}
+
+.column
+ {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card 
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: 'Baloo 2', cursive;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+h2
+{
+    font-family: 'Baloo 2', cursive;
+    animation-direction: alternate-reverse;
+}
+
+</style>
+<html>
+    <body>
+        <title>About</title>
+<div class="about-section" >
+    <h1>About Me</h1>
+    <p>hey ! Reader I am Abhishek</p>
+  </div>
+  
+  <h2 style="text-align:center">Me</h2>
+  <div class="row">
+    <div class="column">
+     
+ </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="/js/IMG_20200204_205720_755.jpg" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Abhishek </h2>
+          <p class="title">Software Eng.</p>
+          <p>AbhishekFasate@gmail.com</p>
+          <p><button class="button" onclick="contact(this)" >Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+     
+    </div>
+  </div>
+  <script>
+      function contact()
+       {
+       alert("abhishekfasate@gmail.com");
+       }
+  </script>
+</body>
+</html>
